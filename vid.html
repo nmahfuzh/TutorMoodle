@@ -1,0 +1,39 @@
+<!DOCTYPE html> 
+<html>
+
+<head>
+	<title>Title</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="lib/jquery.mobile-1.4.5/jquery.mobile-1.4.5.min.css" />
+	<script src="lib/jquery-1.11.1/jquery-1.11.1.min.js"></script>
+	<script src="lib/jquery.mobile-1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head>
+<body>
+	<!--Home-->
+	<div data-role="page">
+
+		<div data-role="popup" id="contact" data-position-to="window">
+		 <a href="#" data-rel="back" data-role="button" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
+			<iframe src="contact.html" height="320" seamless></iframe>
+		</div>
+		
+		<div data-role="header" data-position="fixed" align="center">
+			<a href="#" data-rel="back" data-icon="back">back</a><h1>Video</h1>
+		</div>
+
+		<div data-role="content" data-type="horizontal">
+				<iframe width="100%" height="320px" src="https://www.youtube.com/embed/oO-adpYTQxg" frameborder="0" allowfullscreen></iframe>
+		</div>
+
+		<div data-role="footer" data-position="fixed">
+			<div data-role="navbar" data-iconpos="left">
+				<ul >
+					<li><a href="index.html" data-icon="home" rel="external">Home</a></li>
+					<li><a href="menu.html" data-icon="grid" rel="external">Menu</a></li>
+					<li><a href="#contact" data-icon="info" data-rel="popup" data-transition="flip">Contact</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

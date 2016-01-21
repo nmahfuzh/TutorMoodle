@@ -1,0 +1,6 @@
+app_name = TutorMoodle
+cordova.class_name = TutorMoodle
+web_root_directory = .
+output_directory = ../TutorMoodle-android
+cordova.package_name = org.webapk.tutormoodle
+app_icon = 

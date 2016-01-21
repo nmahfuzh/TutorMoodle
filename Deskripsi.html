@@ -1,0 +1,47 @@
+<!DOCTYPE html> 
+<html>
+
+<head>
+	<title>Title</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="lib/jquery.mobile-1.4.5/jquery.mobile-1.4.5.min.css" />
+	<script src="lib/jquery-1.11.1/jquery-1.11.1.min.js"></script>
+	<script src="lib/jquery.mobile-1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head>
+<body>
+	<div data-role="page">
+
+		<div data-role="popup" id="contact" data-position-to="window">
+			<a href="#" data-rel="back" data-role="button" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
+			<iframe src="contact.html" height="320" seamless></iframe>
+		</div>
+		
+		<div data-role="header" data-position="fixed" align="center">
+			<a href="#" data-rel="back" data-icon="back">back</a><h1>Deskripsi</h1>
+		</div>
+
+		<div data-role="content" data-type="horizontal">
+			<p>
+			Modul kegiatan pelajaran memungkinkan guru untuk memberikan konten kegiatan dan atau praktek dengan cara yang menarik dan fleksibel. Seorang guru dapat menggunakan Lesson untuk membuat satu set linear dari halaman konten atau kegiatan pembelajaran yang menawarkan berbagai jalur atau pilihan untuk pelajaran. Dalam kasus kedua , para guru dapat memilih untuk meningkatkan keterlibatan dan memastikan pemahaman dengan memasukan berbagai pertanyaan, seperti pilihan ganda, pencocokan dan jawaban singkat. Tergantung pada pilhan siswa dari jawaban dan bagaimana guru mengembangkan pelajaran, siswa dapat menuju ke halaman berikutnya, dibawa ke halaman sebelumnya atau diarahkan jalan berbeda<br>
+				Sebuah pelajaran dapat dinilai , dengan kelas yang tercatat dalam gradebook<br>
+				Lesson digunakan untuk<br>
+			</p>
+			<ol>
+				<li>Belajar mandiri dari topik baru</li>
+				<li>Skenario atau simulasi/latihan pengambilan keputusan</li>
+				<li>Untuk revisi dibedakan,dengan pertanyaan revisi set yang berbeda tergantung pada jawaban yang diberikan kepada pertanyaan awal.</li>
+			</ol>
+		</div>
+
+		<div data-role="footer" data-position="fixed">
+			<div data-role="navbar" data-iconpos="left">
+				<ul >
+					<li><a href="index.html" data-icon="home" rel="external">Home</a></li>
+					<li><a href="menu.html" data-icon="grid" rel="external">Menu</a></li>
+					<li><a href="#contact" data-icon="info" data-rel="popup" data-transition="flip">Contact</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,494 @@
+<!DOCTYPE html> 
+<html>
+
+<head>
+	<title>Title</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="lib/jquery.mobile-1.4.5/jquery.mobile-1.4.5.min.css" />
+	<script src="lib/jquery-1.11.1/jquery-1.11.1.min.js"></script>
+	<script src="lib/jquery.mobile-1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head>
+<body>
+	<div data-role="page" id="p1">
+		<div data-role="popup" id="contact1" data-position-to="window">
+			<a href="#" data-rel="back" data-role="button" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
+			<iframe src="contact.html" height="320" seamless></iframe>
+		</div>
+		
+		<div data-role="header" data-position="fixed" align="center">
+			<a href="#" data-rel="back" data-icon="back">back</a><h1></h1><a href="#p2" data-icon="forward">next</a>
+		</div>
+
+		<div data-role="content" data-type="horizontal">		
+			<h2>Menambahkan Activity Lesson</h2>
+			<p>
+				<ol>
+					<li>Pastikan Editing Mode aktif pada halaman Course yang di pilih</li>
+					<li>Dari unit homepage Moodle, tentukan bagian dimana anda ingin menambhkan sebuah Pelajaran, click Add an activity resource.<img src="images/activities-content-add.png" width="100%"></li>
+					<li>Pilih Lesson dari Activitites list dan klick Add<img src="images/lesson-add.png" width="100%" ></li>
+					<li>Di bagian Umum berikan nama (ini akan ditampilkan sebagai link di halaman Unit)</li>
+					<p><b>Catatan</b>Selama ini, dan topik lainnya Anda akan diberikan pilihan untuk 'Tampilkan / Collapse' atau menunjukkan 'Lebih / Kurang'.  Pilihan ini menampilkan atau menyembunyikan informasi sesuai dengan kebutuhan pilihan Anda.</p>
+				</ol>
+			</p>
+		</div>
+
+		<div data-role="footer" data-position="fixed">
+			<div data-role="navbar" data-iconpos="left">
+				<ul >
+					<li><a href="index.html" data-icon="home" rel="external">Home</a></li>
+					<li><a href="menu.html" data-icon="grid" rel="external">Menu</a></li>
+					<li><a href="#contact1" data-icon="info" data-rel="popup" data-transition="flip">Contact</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<div data-role="page" id="p2">
+		<div data-role="popup" id="contact2" data-position-to="window">
+			<a href="#" data-rel="back" data-role="button" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
+			<iframe src="contact.html" height="320" seamless></iframe>
+		</div>
+		
+		<div data-role="header" data-position="fixed" align="center">
+			<a href="#" data-rel="back" data-icon="back">back</a><h1></h1><a href="#p3" data-icon="forward">next</a>
+		</div>
+
+		<div data-role="content" data-type="horizontal">
+			<h2>Menambahkan Halaman</h2>
+			<p>
+				<ol>
+					<li>Pastikan Pada mode editing</li>
+					<li>Sebelah pelajaran yang ingin Anda edit, klik pada icon  Pelajaran <img src="images/lesson-icon.png" width="24px"> atau nama kegiatan pelajaran.<br><b>Catatan:</b> Ketika Anda bekerja dengan pelajaran, Anda juga dapat mengklik link Edit dalam blok Administrasi, di bawah administrasi Pelajaran <br><img src="images/lesson-admin-edit.jpg" width="100%"></li>
+					<li>Anda akan diarahkan ke halaman, di mana Anda dapat memilih apa yang ingin Anda lakukan pertama</li>
+				</ol>
+			</p>
+		</div>
+
+		<div data-role="footer" data-position="fixed">
+			<div data-role="navbar" data-iconpos="left">
+				<ul >
+					<li><a href="index.html" data-icon="home" rel="external">Home</a></li>
+					<li><a href="menu.html" data-icon="grid" rel="external">Menu</a></li>
+					<li><a href="#contact2" data-icon="info" data-rel="popup" data-transition="flip">Contact</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<div data-role="page" id="p3">
+		<div data-role="popup" id="contact3" data-position-to="window">
+			<a href="#" data-rel="back" data-role="button" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
+			<iframe src="contact.html" height="320" seamless></iframe>
+		</div>
+		
+		<div data-role="header" data-position="fixed" align="center">
+			<a href="#" data-rel="back" data-icon="back">back</a><h1></h1><a href="#p4" data-icon="forward">next</a>
+		</div>
+
+		<div data-role="content" data-type="horizontal">
+			<h2>Menambahkan halaman konten</h2>
+			<p>
+				<ol>
+					<li>Klik Add halaman konten.  Sebuah halaman konten untuk gambar teks dan media tertanam.  Anda tidak dapat menambahkan pertanyaan ke halaman konten<br><img src="images/add-content-page.png" width="100%"></li>
+					<li>Di bidang <b>Page title</b> , memberi nama halaman Anda. </li>
+					<li>Di bidang <b>Page contents</b> , masukkan isi halaman.</li>
+					<li>Dalam <b>Content Description</b> textbox, masukkan deskripsi, yang akan memandu siswa untuk halaman telah Anda tetapkan<br><img src="images/lesson-content-page.png" width="100%"><br><b>Catatan:</b> Teks dari <b>Content Description</b> textbox akan menjadi label untuk sebuah tombol.  Tombol bertindak sebagai panduan untuk apa yang ada di halaman berikutnya setelah Anda klik. </li>
+					<li>Klik Simpan halaman.</li>
+				</ol>
+			</p>
+		</div>
+
+		<div data-role="footer" data-position="fixed">
+			<div data-role="navbar" data-iconpos="left">
+				<ul >
+					<li><a href="index.html" data-icon="home" rel="external">Home</a></li>
+					<li><a href="menu.html" data-icon="grid" rel="external">Menu</a></li>
+					<li><a href="#contact3" data-icon="info" data-rel="popup" data-transition="flip">Contact</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<div data-role="page" id="p4">
+		<div data-role="popup" id="contact4" data-position-to="window">
+			<a href="#" data-rel="back" data-role="button" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
+			<iframe src="contact.html" height="320" seamless></iframe>
+		</div>
+		
+		<div data-role="header" data-position="fixed" align="center">
+			<a href="#" data-rel="back" data-icon="back">back</a><h1></h1><a href="#p5" data-icon="forward">next</a>
+		</div>
+
+		<div data-role="content" data-type="horizontal">
+			<h2>Menambahkan cluster</h2>
+			<p>Sebuah cluster adalah sekelompok halaman pertanyaan yang disajikan kepada siswa dalam urutan acak.  Awal ditandai dengan menambahkan halaman cluster dan akhirnya dengan menambahkan akhir halaman klaster. 
+				<ol>
+					<li>Untuk menambahkan sebuah cluster:
+						<ol type="a">
+							<li>Menavigasi ke halaman yang Anda ingin cluster untuk memulai</li>
+							<li>Klik Add cluster.</li>
+						</ol>
+					</li>
+					<li>
+						Untuk menambahkan akhir halaman klaster:
+						<ol type="a">
+							<li>Arahkan ke halaman terakhir yang Anda ingin cluster berakhir.</li>
+							<li>Klik Add akhir cluster<br><img src="images/add-end-cluster.png" width="100%"></li>
+						</ol>
+					</li>
+				</ol>
+			</p>
+		</div>
+
+		<div data-role="footer" data-position="fixed">
+			<div data-role="navbar" data-iconpos="left">
+				<ul >
+					<li><a href="index.html" data-icon="home" rel="external">Home</a></li>
+					<li><a href="menu.html" data-icon="grid" rel="external">Menu</a></li>
+					<li><a href="#contact4" data-icon="info" data-rel="popup" data-transition="flip">Contact</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<div data-role="page" id="p5">
+		<div data-role="popup" id="contact5" data-position-to="window">
+			<a href="#" data-rel="back" data-role="button" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
+			<iframe src="contact.html" height="320" seamless></iframe>
+		</div>
+		
+		<div data-role="header" data-position="fixed" align="center">
+			<a href="#" data-rel="back" data-icon="back">back</a><h1></h1><a href="#p6" data-icon="forward">next</a>
+		</div>
+
+		<div data-role="content" data-type="horizontal">
+			<h2>Menambahkan halaman pertanyaan</h2>
+			<p>
+			Setiap pertanyaan dapat berisi satu pertanyaan, dengan mendukung konten jika diperlukan.<br>
+			<ol>
+				<li>Klik Add halaman pertanyaan.</li>
+				<li>Pilih dari menu drop down jenis halaman pertanyaan Anda ingin menambahkan.</li>
+				<img src="images/select-question-type.png">
+				<li> Klik Simpan halaman. </li>
+				<li>Tambahkan halaman pertanyaan display. Isi dari halaman ini ditentukan oleh jenis pertanyaan yang dipilih.
+Contoh: Multichoice jenis pertanyaan
+				<ol type="a">
+					<li>Di bidang judul Page, beri nama halaman Multichoice Anda.</li>
+					<li>Dalam isi Halaman textbox, masukkan pertanyaan Anda.</li>
+					<img src="images/add-question-page.png" width="100%"><br>
+					<b>Catatan:</b> Jika pertanyaan memiliki lebih dari satu jawaban yang benar, memastikan Multiple-jawaban kotak centang dipilih.
+					<li>Masukkan bidang lain seperti yang diperlukan.</li>
+					<li>Klik Simpan halaman.</li>
+				</ol>
+				</li>
+			</ol>
+			<b>Catatan:</b> Ketika membuat halaman pertanyaan Essay, petunjuk menandai diperlukan. Untuk informasi lebih lanjut tentang cara kelas pertanyaan esai, lihat kelas Essays bagian.
+			</p>
+		</div>
+
+		<div data-role="footer" data-position="fixed">
+			<div data-role="navbar" data-iconpos="left">
+				<ul >
+					<li><a href="index.html" data-icon="home" rel="external">Home</a></li>
+					<li><a href="menu.html" data-icon="grid" rel="external">Menu</a></li>
+					<li><a href="#contact5" data-icon="info" data-rel="popup" data-transition="flip">Contact</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<div data-role="page" id="p6">
+		<div data-role="popup" id="contact6" data-position-to="window">
+			<a href="#" data-rel="back" data-role="button" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
+			<iframe src="contact.html" height="320" seamless></iframe>
+		</div>
+		
+		<div data-role="header" data-position="fixed" align="center">
+			<a href="#" data-rel="back" data-icon="back">back</a><h1></h1><a href="#p7" data-icon="forward">next</a>
+		</div>
+
+		<div data-role="content" data-type="horizontal">
+			<h2>Mengakhiri pelajaran Anda</h2>
+			<p>
+			<ol>
+				<li>Pastikan pada mode Editing</li>
+				<li>Sebelah pelajaran yang ingin Anda edit, klik pada <img src="images/lesson-icon.png" width="24px"> ikon atau nama kegiatan pelajaran. Klik Edit.</li>
+				<b>Catatan:</b> Ketika Anda bekerja dengan pelajaran, Anda juga dapat mengklik link Edit dalam blok Administrasi, di bawah administrasi Pelajaran.<br>
+				<img src="images/lesson-admin-edit.jpg">
+				<li>Arahkan ke halaman terakhir pelajaran Anda akan memiliki. Klik pada<img src="images/tool_update.png">icon</li>
+				<li>Dalam <b>Content Description</b> textbox, masukkan deskripsi, yang akan menginformasikan mahasiswa akhir pelajaran.
+<b>Catatan:</b> Teks dari <b>Content Description</b> textbox akan membentuk menjadi label untuk sebuah tombol. Tombol bertindak sebagai panduan untuk apa yang ada di halaman berikutnya setelah Anda klik.</li>
+				<li>Di bidang Langsung, menggunakan menu drop dan pilih End pelajaran bawah.</li>
+				<img src="images/end-lesson.png" width="100%">
+				<li>Klik Simpan halaman.</li>
+			</ol>
+			</p>
+		</div>
+
+		<div data-role="footer" data-position="fixed">
+			<div data-role="navbar" data-iconpos="left">
+				<ul >
+					<li><a href="index.html" data-icon="home" rel="external">Home</a></li>
+					<li><a href="menu.html" data-icon="grid" rel="external">Menu</a></li>
+					<li><a href="#contact6" data-icon="info" data-rel="popup" data-transition="flip">Contact</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<div data-role="page" id="p7">
+		<div data-role="popup" id="contact7" data-position-to="window">
+			<a href="#" data-rel="back" data-role="button" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
+			<iframe src="contact.html" height="320" seamless></iframe>
+		</div>
+		
+		<div data-role="header" data-position="fixed" align="center">
+			<a href="#" data-rel="back" data-icon="back">back</a><h1></h1><a href="#p8" data-icon="forward">next</a>
+		</div>
+
+		<div data-role="content" data-type="horizontal">
+			<h2>Preview pelajaran Anda</h2>
+			<p>
+			<ol>
+				<li>Pastikan pada editing mode</li>
+				<li>Sebelah pelajaran yang ingin Anda edit, klik pada<img src="images/lesson-icon.png" width="24px"> ikon atau nama kegiatan pelajaran. Klik Edit.</li>
+				<li>Klik Preview.</li>
+				Catatan: Ketika Anda bekerja dengan pelajaran, Anda juga dapat mengklik pada link Preview dalam blok Administrasi, di bawah administrasi Pelajaran.<br>
+				<img src="images/lesson-admin-preview.jpg">
+			</ol>
+			</p>
+		</div>
+
+		<div data-role="footer" data-position="fixed">
+			<div data-role="navbar" data-iconpos="left">
+				<ul >
+					<li><a href="index.html" data-icon="home" rel="external">Home</a></li>
+					<li><a href="menu.html" data-icon="grid" rel="external">Menu</a></li>
+					<li><a href="#contact7" data-icon="info" data-rel="popup" data-transition="flip">Contact</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<div data-role="page" id="p8">
+		<div data-role="popup" id="contact8" data-position-to="window">
+			<a href="#" data-rel="back" data-role="button" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
+			<iframe src="contact.html" height="320" seamless></iframe>
+		</div>
+		
+		<div data-role="header" data-position="fixed" align="center">
+			<a href="#" data-rel="back" data-icon="back">back</a><h1></h1><a href="#p9" data-icon="forward">next</a>
+		</div>
+
+		<div data-role="content" data-type="horizontal">
+			<h2>Mengedit pelajaran</h2>
+			<p>
+			Untuk kembali ke mengedit pelajaran, memastikan editing pada, dan Anda dapat klik pada<img src="images/lesson-icon.png" width="24px">ikon atau nama kegiatan pelajaran.
+			<h2>Mengedit halaman pelajaran</h2>
+			<ol>
+				<li>Pastikan pada editing mode</li>
+				<li>Sebelah pelajaran yang ingin Anda edit, klik pada<img src="images/lesson-icon.png" width="24px"> ikon atau nama kegiatan pelajaran. Klik Edit.</li>
+				Catatan: Ketika Anda bekerja dengan pelajaran, Anda juga dapat mengklik link Edit dalam blok Administrasi, di bawah administrasi Pelajaran.<br>
+				<img src="images/lesson-admin-edit.jpg">
+				<li>Arahkan ke halaman pelajaran yang Anda ingin mengedit. Klik pada<img src="images/tool_update.png">icon</li>
+			</ol>
+			</p>
+		</div>
+
+		<div data-role="footer" data-position="fixed">
+			<div data-role="navbar" data-iconpos="left">
+				<ul >
+					<li><a href="index.html" data-icon="home" rel="external">Home</a></li>
+					<li><a href="menu.html" data-icon="grid" rel="external">Menu</a></li>
+					<li><a href="#contact8" data-icon="info" data-rel="popup" data-transition="flip">Contact</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<div data-role="page" id="p9">
+		<div data-role="popup" id="contact9" data-position-to="window">
+			<a href="#" data-rel="back" data-role="button" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
+			<iframe src="contact.html" height="320" seamless></iframe>
+		</div>
+		
+		<div data-role="header" data-position="fixed" align="center">
+			<a href="#" data-rel="back" data-icon="back">back</a><h1></h1><a href="#p10" data-icon="forward">next</a>
+		</div>
+
+		<div data-role="content" data-type="horizontal">
+			<h2>Hapus pelajaran</h2>
+			<p>
+			Anda dapat menghapus pelajaran setiap saat. Pastikan editing pada, kemudian klik ikon Delete (<img src="images/delete.gif"> ) Di sebelah link kegiatan pelajaran di halaman satuan. Anda akan diminta konfirmasi untuk menghapus aktivitas database. Klik Ok dan item akan segera dihapus.
+			<h2>Menghapus halaman pelajaran</h2>
+			<ol>
+				<li>Pastikan pada editing mode</li>
+				<li>Sebelah pelajaran yang ingin Anda edit, klik pada<img src="images/lesson-icon.png" width="24px"> ikon atau nama kegiatan pelajaran. Klik Edit.</li>
+				<img src="images/lesson-admin-edit.jpg">
+				Catatan: Ketika Anda bekerja dengan pelajaran, Anda juga dapat mengklik link Edit dalam blok Administrasi, di bawah administrasi Pelajaran.
+				<li>Arahkan ke halaman pelajaran yang Anda ingin hapus. Klik pada <img src="images/delete.gif">icon</li>
+				<li> Klik Lanjutkan.</li>
+			</ol>
+			</p>
+		</div>
+
+		<div data-role="footer" data-position="fixed">
+			<div data-role="navbar" data-iconpos="left">
+				<ul >
+					<li><a href="index.html" data-icon="home" rel="external">Home</a></li>
+					<li><a href="menu.html" data-icon="grid" rel="external">Menu</a></li>
+					<li><a href="#contact9" data-icon="info" data-rel="popup" data-transition="flip">Contact</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<div data-role="page" id="p10">
+		<div data-role="popup" id="contact10" data-position-to="window">
+			<a href="#" data-rel="back" data-role="button" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
+			<iframe src="contact.html" height="320" seamless></iframe>
+		</div>
+		
+		<div data-role="header" data-position="fixed" align="center">
+			<a href="#" data-rel="back" data-icon="back">back</a><h1></h1><a href="#p11" data-icon="forward">next</a>
+		</div>
+
+		<div data-role="content" data-type="horizontal">
+			<h2>Pindahkan pelajaran</h2>
+			<p>
+			Anda dapat memindahkan pelajaran untuk mengatur dalam topik yang berbeda. Pastikan editing pada, kemudian klik ikon Move ( <img src="images/move_2d.gif"> ) Di samping aktivitas pelajaran dan drag-and-menjatuhkan item ke lokasi baru.
+			<h2>Memindahkan halaman pelajaran</h2>
+			<ol>
+				<li>Pastikan pada editing mode</li>
+				<li>Sebelah pelajaran yang ingin Anda edit, klik pada<img src="images/lesson-icon.png" width="24px"> ikon atau nama kegiatan pelajaran. Klik Edit.</li>
+				Catatan: Ketika Anda bekerja dengan pelajaran, Anda juga dapat mengklik link Edit dalam blok Administrasi, di bawah administrasi Pelajaran.
+				<img src="images/lesson-admin-edit.jpg">
+				<li> Arahkan ke halaman pelajaran Anda ingin pindah. Klik pada<img src="images/move-arrows.png" width="24px">icon</li>
+				<li>Memindahkan halaman ke sini link akan muncul antara setiap halaman pelajaran yang ada. Klik pada link di mana Anda ingin memindahkan halaman Anda untuk.</li>
+			</ol>
+			</p>
+		</div>
+
+		<div data-role="footer" data-position="fixed">
+			<div data-role="navbar" data-iconpos="left">
+				<ul >
+					<li><a href="index.html" data-icon="home" rel="external">Home</a></li>
+					<li><a href="menu.html" data-icon="grid" rel="external">Menu</a></li>
+					<li><a href="#contact10" data-icon="info" data-rel="popup" data-transition="flip">Contact</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<div data-role="page" id="p11">
+		<div data-role="popup" id="contact11" data-position-to="window">
+			<a href="#" data-rel="back" data-role="button" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
+			<iframe src="contact.html" height="320" seamless></iframe>
+		</div>
+		
+		<div data-role="header" data-position="fixed" align="center">
+			<a href="#" data-rel="back" data-icon="back">back</a><h1></h1><a href="#p12" data-icon="forward">next</a>
+		</div>
+
+		<div data-role="content" data-type="horizontal">
+			<h2>Sembunyikan / Tampilkan pelajaran</h2>
+			<p>
+			Untuk menyembunyikan pelajaran Anda, pastikan editing pada, kemudian klik pada icon mata (  <img src="images/tool_hide_show_eye.png" width="24px">  ) Di sebelah link aktivitas pelajaran. Ketika pelajaran Anda adalah tersembunyi, mata akan ditampilkan sebagai tertutup ( <img src="images/tool_hide_eye.png" width="24px">).<br>
+			Catatan: Untuk mengatur tanggal / waktu di mana pelajaran dapat dibaca oleh / tersedia untuk siswa, Anda dapat mengkonfigurasi ini dalam pengaturan pelajaran ini.
+			</p>
+		</div>
+
+		<div data-role="footer" data-position="fixed">
+			<div data-role="navbar" data-iconpos="left">
+				<ul >
+					<li><a href="index.html" data-icon="home" rel="external">Home</a></li>
+					<li><a href="menu.html" data-icon="grid" rel="external">Menu</a></li>
+					<li><a href="#contact11" data-icon="info" data-rel="popup" data-transition="flip">Contact</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<div data-role="page" id="p12">
+		<div data-role="popup" id="contact12" data-position-to="window">
+			<a href="#" data-rel="back" data-role="button" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
+			<iframe src="contact.html" height="320" seamless></iframe>
+		</div>
+		
+		<div data-role="header" data-position="fixed" align="center">
+			<a href="#" data-rel="back" data-icon="back">back</a><h1></h1><a href="#p13" data-icon="forward">next</a>
+		</div>
+
+		<div data-role="content" data-type="horizontal">
+			<h2>Laporan dan upaya Ulasan pelajaran</h2>
+			<p>
+			<ol>
+				<li>
+					Pastikan pada editing mode
+				</li>
+				<li>Sebelah pelajaran yang ingin Anda edit, klik pada<img src="images//lesson-icon.png" width="24px">ikon atau nama kegiatan pelajaran. Klik Edit.</li>
+				Catatan: Ketika Anda bekerja dengan pelajaran, Anda juga dapat mengklik link Edit dalam blok Administrasi, di bawah administrasi Pelajaran.
+				<img src="images/lesson-admin-edit.jpg">
+				<li>Klik Laporan.</li>
+				<img src="images/lesson-reports.png" width="100%">
+				<ol type="a">
+					<li>Untuk melihat upaya siswa individu, klik Ikhtisar. Klik link di samping nama siswa.</li>
+					<li>Untuk melihat statistik rinci dari pelajaran, klik statistik lengkap.</li>
+				</ol>
+			</ol>
+			</p>
+		</div>
+
+		<div data-role="footer" data-position="fixed">
+			<div data-role="navbar" data-iconpos="left">
+				<ul >
+					<li><a href="index.html" data-icon="home" rel="external">Home</a></li>
+					<li><a href="menu.html" data-icon="grid" rel="external">Menu</a></li>
+					<li><a href="#contact12" data-icon="info" data-rel="popup" data-transition="flip">Contact</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<div data-role="page" id="p13">
+		<div data-role="popup" id="contact13" data-position-to="window">
+			<a href="#" data-rel="back" data-role="button" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
+			<iframe src="contact.html" height="320" seamless></iframe>
+		</div>
+		
+		<div data-role="header" data-position="fixed" align="center">
+			<a href="#" data-rel="back" data-icon="back">back</a><h1></h1><a href="vid.html" data-rel="external" data-icon="forward">next</a>
+		</div>
+
+		<div data-role="content" data-type="horizontal">
+			<h2>Esai</h2>
+			<p>
+			<ol>
+				<li>
+					Pastikan pada editing mode
+				</li>
+				<li>Sebelah pelajaran yang ingin Anda edit, klik pada<img src="images//lesson-icon.png" width="24px">ikon atau nama kegiatan pelajaran. Klik Edit.</li>
+				Catatan: Ketika Anda bekerja dengan pelajaran, Anda juga dapat mengklik link Edit dalam blok Administrasi, di bawah administrasi Pelajaran.
+				<img src="images/lesson-admin-edit.jpg">
+				<li>Klik kelas esai.</li>
+				<img src="images/lesson-grades-tab.jpg">
+				<li>Arahkan dan klik ke upaya esai Anda ingin kelas.</li>
+				<li>Di kolom komentar Anda, masukkan komentar Anda.</li>
+				<li>Pilih skor Essay dari menu drop down.</li>
+				<li>Klik Simpan perubahan.</li>
+			</ol>
+			</p>
+		</div>
+
+		<div data-role="footer" data-position="fixed">
+			<div data-role="navbar" data-iconpos="left">
+				<ul >
+					<li><a href="index.html" data-icon="home" rel="external">Home</a></li>
+					<li><a href="menu.html" data-icon="grid" rel="external">Menu</a></li>
+					<li><a href="#contact13" data-icon="info" data-rel="popup" data-transition="flip">Contact</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

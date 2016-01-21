@@ -1,0 +1,40 @@
+<!DOCTYPE html> 
+<html>
+
+<head>
+	<title>Title</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="lib/jquery-1.11.1/jquery-1.11.1.min.js"></script>
+	<script src="lib/jquery.mobile-1.4.5/jquery.mobile-1.4.5.min.js"></script>
+	<link rel="stylesheet" href="lib/jquery.mobile-1.4.5/jquery.mobile-1.4.5.min.css" />
+</head>
+<body>
+	<!--Home-->
+	<div data-role="page">
+
+		<div data-role="popup" id="contact" data-position-to="window">
+			<a href="#" data-rel="back" data-role="button" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
+			<iframe src="contact.html" height="320" seamless></iframe>
+		</div>
+
+		<div data-role="header" data-position="fixed" align="center">
+			<h1>Home</h1>
+		</div>
+		<div data-role="content">
+			<img src="images/logo.png" align="center">
+			<h2>Hay Terimakasih telah menggunakan aplikasi ini</h2>
+			<p>Aplikasi ini berisikan penjelasan tentang fitur Activity Lesson pada Moodle. selain penjelasan tentang fungsi fungsi dari Activity Lesson juga terdapat cara penggunaan serta video untuk membantu memahami tentang Activity Lesson pada Moodle</p>
+			<small>Semoga modul ini dapat membantu ... (^_^)</small>
+		</div>
+		<div data-role="footer" data-position="fixed">
+			<div data-role="navbar" data-iconpos="left">
+				<ul >
+					<li><a href="#" data-icon="home">Home</a></li>
+					<li><a href="menu.html" data-icon="grid" rel="external">Menu</a></li>
+					<li><a href="#contact" data-icon="info" data-rel="popup" data-transition="flip">Contact</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
